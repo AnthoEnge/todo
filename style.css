@@ -164,7 +164,7 @@ input {
     padding: 10px;
     background: rgb(13, 14, 31);
     border-radius: 10px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,4 +200,8 @@ input {
 .item .removeClick:hover {
    background: red;
 
+}
+
+.activeColor {
+    color:rgb(255, 255, 255) !important;
 }

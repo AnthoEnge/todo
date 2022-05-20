@@ -26,9 +26,12 @@
         <div class="content">
             <div class="buttonText">
                 <h3>Add a Todo</h3>
-                <input type="text" name="" id="text" placeholder="Create a news todo"> <br>
-                <input type="button" value="v" id="valide">
-                <input type="button" value="x" id="remove">
+                <form onsubmit="return false">
+                    <input type="text" name="" id="text" placeholder="Create a news todo"> <br>
+                    <input type="submit" value="v" id="valide">
+                    <input type="button" value="x" id="remove">
+                </form>
+
             </div>
         </div>
     </div>
@@ -39,11 +42,11 @@
 
                 <div class="container">
                     <div class="todoFooter">
-                        <p class = "todoFooterWidth"><span id="itemLeft">x</span> items left</p>
-                        <h3>All</h3>
-                        <h3>Active</h3>
-                        <h3>Completed</h3>
-                        <h3 class = "todoFooterWidth">Clear Completed</h3>
+                        <p class = "todoFooterWidth"><span id="itemLeft">0</span> items left</p>
+                        <h3 id="all">All</h3>
+                        <h3 id="active">Active</h3>
+                        <h3 id="completed">Completed</h3>
+                        <h3 class = "todoFooterWidth" id="removeAll">Clear Completed</h3>
                     </div>
                 </div>
 
